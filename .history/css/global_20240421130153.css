@@ -1,0 +1,8 @@
+:root {
+    --primary-color: #e50914;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+
+}

@@ -1,0 +1,43 @@
+.banner-section {
+    position: relative;
+    height: 100vh;
+}
+
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 5;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+		to top,
+		rgba(0, 0, 0, 0.8) 0,
+		rgba(0, 0, 0, 0.4) 40%,
+		rgba(0, 0, 0, 0.4) 75%,
+		rgba(0, 0, 0, 0.8) 100%);
+        z-index: 10;
+}
+
+
+.banner-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 15;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 0rem 5rem;
+}

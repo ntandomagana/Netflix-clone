@@ -1,0 +1,10 @@
+:root {
+    --primary-color: #e50914;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    line-height: normal;
+    padding: 0.7rem 1.7rem;
+
+}

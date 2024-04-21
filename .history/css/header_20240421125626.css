@@ -1,0 +1,23 @@
+
+
+.header {
+    position: absolute;
+    height: 10rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    display: ;
+
+}
+
+.header-logo {
+    display: block;
+    width: 15rem;
+    padding: 0 1rem;
+}
+
+.header-logo  img {
+    height: 100%;
+    width: 100%;
+}

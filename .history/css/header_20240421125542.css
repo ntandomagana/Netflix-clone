@@ -1,0 +1,17 @@
+
+
+.header {
+    position: absolute;
+    height: 10rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 15;
+
+}
+
+.header-logo {
+    display: block;
+    width: 15rem;
+    padding: 0 1rem;
+}
