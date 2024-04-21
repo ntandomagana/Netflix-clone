@@ -1,0 +1,15 @@
+.membership-form {
+    display: grid;
+    position: relative;
+}
+
+.membership-input-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.membership-input {
+    flex-basis: 100%;
+    padding: 1rem;
+}
