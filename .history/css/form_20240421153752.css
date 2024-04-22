@@ -4,9 +4,7 @@
 }
 
 .membership-input-container {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
+    position: absolute;
 }
 
 .membership-input {
@@ -47,18 +45,6 @@
 	transform: translateY(-50%);
 	font-size: 1.4rem;
 	transition: all 0.3s ease-in-out;
-}
-
-.membership-input-container.on-focus .membership-placeholder {
-    top: 1rem;
-    font-size: 1.2rem;
-
-}
-
-.form-cta {
-    font-size: 1.6rem;
-    margin: 1rem 0;
-    font-weight: 600;
 }
 
 

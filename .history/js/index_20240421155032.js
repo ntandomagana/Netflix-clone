@@ -1,0 +1,1 @@
+ const membershipForm = document.querySelector('.membership-form')

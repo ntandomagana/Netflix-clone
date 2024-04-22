@@ -19,11 +19,9 @@
     if (value) return true
     
     if (type === FOCUS_IN) {
-        membershipInputContainer.classList.add(ON_FOCUS)
-        return true
+        membershipInpputContainer.classList.add(ON_FOCUS)
+        RETURN TR
     }
-
-    membershipInputContainer.classList.remove(ON_FOCUS)
 }
 membershipInput.addEventListener(FOCUS_IN, handleFocus)
 membershipInput.addEventListener('focusout', handleFocus)

@@ -1,0 +1,38 @@
+.membership-form {
+  display: grid;
+  position: relative;
+}
+
+.membership-input-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.membership-input {
+  flex-basis: 100%;
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  border: none;
+  font-size: 1.6rem;
+}
+
+.membership-input:focus {
+  outline: none;
+}
+
+.membership-btn {
+  justify-self: center;
+  width: 100%;
+  max-width: 20rem;
+  padding: 1.5rem 3rem;
+}
+
+.membership-input-message {
+    flex-basis: 100%;
+    text-align: start;
+    margin: 1rem 0;
+    color: #ffa00a;
+    font-size: 1.5rem;
+}

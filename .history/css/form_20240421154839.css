@@ -50,15 +50,8 @@
 }
 
 .membership-input-container.on-focus .membership-placeholder {
-    top: 1rem;
-    font-size: 1.2rem;
+    
 
-}
-
-.form-cta {
-    font-size: 1.6rem;
-    margin: 1rem 0;
-    font-weight: 600;
 }
 
 
