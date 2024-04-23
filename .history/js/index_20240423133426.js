@@ -1,6 +1,6 @@
  const membershipForm = document.querySelector('.membership-form')
  const membershipInput = document.querySelector('.membership-input')
- const membershipInputContainer = document.querySelector('.membership-input-container')
+ const membershipInpputContainer = document.querySelector('.membership-input-container')
  const membershipInputLabel = document.querySelector('.membership-placeholder')
  const membershipInputMessage = document.querySelector('.membership-input-message')
 
@@ -47,6 +47,6 @@ setTimeout(() => {
 }
     membershipInput.addEventListener(FOCUS_IN, handleFocus)
     membershipInput.addEventListener('focusout', handleFocus)
-    membershipForm.addEventListener('submit', handleSubmit)
+    membershipForm.addEventListener('SUBMIT', handleSub)
 
 })

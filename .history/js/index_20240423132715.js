@@ -1,6 +1,6 @@
  const membershipForm = document.querySelector('.membership-form')
  const membershipInput = document.querySelector('.membership-input')
- const membershipInputContainer = document.querySelector('.membership-input-container')
+ const membershipInpputContainer = document.querySelector('.membership-input-container')
  const membershipInputLabel = document.querySelector('.membership-placeholder')
  const membershipInputMessage = document.querySelector('.membership-input-message')
 
@@ -38,15 +38,6 @@ const handleSubmit = (e) => {
         membershipInputContainer.classList.remove(ON_FOCUS)
 
     } else }
-    membershipInputMessage.innerText = 'Please enter a valid email'
-}
-
-setTimeout(() => {
-    membershipInputMessage.innerText = ''
-}, 3000)
-}
-    membershipInput.addEventListener(FOCUS_IN, handleFocus)
-    membershipInput.addEventListener('focusout', handleFocus)
-    membershipForm.addEventListener('submit', handleSubmit)
-
-})
+    membershipInputMessage.innerText = ''Please enter a valid email'
+membershipInput.addEventListener(FOCUS_IN, handleFocus)
+membershipInput.addEventListener('focusout', handleFocus)
