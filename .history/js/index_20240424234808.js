@@ -61,5 +61,5 @@ accordionQuestionEls.forEach(element => {
 
   }
 
-  element.addEventListener('click', handler)
+  element.addEventListener('')
 })

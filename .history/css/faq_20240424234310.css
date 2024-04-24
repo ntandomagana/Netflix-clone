@@ -56,9 +56,3 @@
 .accordion.active .accordion-question:after {
     content: '-';
 }
-
-.accordion-answer {
-    background: #303030;
-    padding: var(--accordion-padding);
-    display: none
-}

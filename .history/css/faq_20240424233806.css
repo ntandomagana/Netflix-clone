@@ -22,7 +22,7 @@
 
 .accordion {
     --accordion-padding: 1.8rem;
-    --accordion-right-padding: 6rem;
+    --accordion-right-padding: 1.8rem;
 
 }
 
@@ -34,31 +34,5 @@
     padding: var(--accordion-padding);
     padding-right: var(--accordion-right-padding);
     margin-bottom: 1px;
-    font-size: inherit;
-    position: relative;
-    cursor: pointer;
-}
-
-.accordion-question:after {
-    content: '+';
-    display: grid;
-    place-items: center;
-    position: absolute;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: var(--accordion-right-padding);
-    font-size: 3rem;
-
-}
-
-.accordion.active .accordion-question:after {
-    content: '-';
-}
-
-.accordion-answer {
-    background: #303030;
-    padding: var(--accordion-padding);
-    display: none
+    
 }

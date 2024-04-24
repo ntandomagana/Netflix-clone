@@ -57,9 +57,6 @@ membershipForm.addEventListener("submit", handleSubmit);
 accordionQuestionEls.forEach(element => {
   const handler = (e) => {
     const parent = e.target.parentElement
-    parent.classList.toggle('active')
 
   }
-
-  element.addEventListener('click', handler)
 })

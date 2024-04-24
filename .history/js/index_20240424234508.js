@@ -8,7 +8,7 @@ const membershipInputMessage = document.querySelector(
   ".membership-input-message"
 );
 
-const accordionQuestionEls = document.querySelectorAll('.accordion-question');
+const accordionQuesstionEls =
 
 const ON_FOCUS = "on-focus"; // Use a consistent naming convention for constants
 const FOCUS_IN = "focusin"; // 'focus-in' isn't a standard event, changed to 'focusin'
@@ -53,13 +53,3 @@ const handleSubmit = (e) => {
 membershipInput.addEventListener(FOCUS_IN, handleFocus);
 membershipInput.addEventListener("focusout", handleFocus);
 membershipForm.addEventListener("submit", handleSubmit);
-
-accordionQuestionEls.forEach(element => {
-  const handler = (e) => {
-    const parent = e.target.parentElement
-    parent.classList.toggle('active')
-
-  }
-
-  element.addEventListener('click', handler)
-})
