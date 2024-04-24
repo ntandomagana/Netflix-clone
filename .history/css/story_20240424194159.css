@@ -1,0 +1,16 @@
+.story-card {
+    padding: 5rem 5%;
+    display: grid;
+    grid-row-gap: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.story-card-left {
+    text-align: center;
+}
+
+.story-card-left h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,11 @@
+.story-card {
+    padding: 5rem 5%;
+    display: grid;
+    grid-row-gap: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.story-card-left {
+    
+}
