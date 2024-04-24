@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/form.css" />
+    <link rel="stylesheet" href="./css/story.css" />
+    <title>Netflix Clone</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header-logo" href="#">
+        <img src="/images/netflix.svg" alt="" />
+      </a>
+      <a class="sign-in-btn primary-btn" href="#">Sign in</a>
+    </header>
+
+    <section class="banner-section">
+      <img class="banner" src="/images/banner.jpg" alt="" />
+      <div class="banner-overlay"></div>
+
+      <div class="banner-content">
+        <h1 class="banner-title">Unlimited movies, TV shows, and more.</h1>
+        <h2 class="banner-subtitle">Watch anywhere. Cancel anytime.</h2>
+
+        <h4 class="form-cta">
+          Ready to watch? Enter your email to create or restart your membership.
+        </h4>
+
+        <form class="membership-form">
+          <div class="membership-input-container">
+            <input class="membership-input" type="email" />
+            <label class="membership-placeholder" for="email">Email</label>
+          </div>
+          <label class="membership-input-message"></label>
+
+          <button class="membership-btn primary-btn" type="submit">
+            Get Started
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+    
+    <div class="story-card-container">
+      <section class="story-card">
+        <div class="story-card-left">
+          <h1>Enjoy on your TV.</h1>
+          <h2>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
+						players, and more.</h2>
+        </div>
+
+        <div class="story-card-right">
+          <div class="tv-anime-container">
+            <img class="tv-img" src="images/tv.png" alt="" />
+            <video class="tv-anime" 
+            autoplay
+            muted 
+            loop
+            src="images/tv_animation.m4v">
+          </video>
+          </div>
+        </div>
+      </section>
+
+          <hr class="section-divider" />
+      <section class="story-card">
+        <div class="story-card-left">
+          <h1>Download your shows to watch offline.</h1>
+          <h2>Save your favorites easily and always have something to watch.</h2>
+        </div>
+
+        <div class="story-card-right">
+          <div class="download-container">
+            <img src="images/mobile.jpg" alt="" />
+
+            <div class="download-animation-container">
+              <img class="poster" src="images/boxshot.png" alt="" />
+
+              <div class="text-container">
+                <p class="title">Stranger Things</p>
+                <p class="downloading">Downloading...</p>
+              </div>
+              <img src="images/download-icon.gif" class="download-gif" alt="" />
+            </div>
+          </div>
+        </div>
+        </section>
+        
+        <hr class="section-divider" />
+      <section class="story-card">
+        <div class="story-card-left">
+          <h1>Watch anywhere. Cancel anytime.</h1>
+          <h2>Stream unlimited movies and TV shows on your phone, tablet, laptop, and
+						TV.</h2>
+        </div>
+        </section>
+        
+        <hr class="section-divider" />
+        <section class="story-card">
+          <div class="story-card-left">
+            <h1>Create profiles for kids.</h1>
+            <h2>Send kids on adventures with their favorite characters in a space made
+						just for them—free with your membership.</h2>
+          </div>
+          <div class="story-card-right">
+            <img class="kids-image" src="images/kids.png" alt="" />
+          </div>
+        </section>
+
+        <hr class="section-divider" />
+        </div>
+
+        <section class="faq">
+          <h2 class="title">Frequently Asked Questions</h2>
+
+          <ul class="accordion-list">
+            <li class="accordion">
+              <button class="accordion-question">What is Netflix?</button>
+
+              <p class="accordion-answer">Netflix is a streaming service that offers a wide variety of award-winning TV
+                shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+              
+                <br />
+                You can watch as much as you want, whenever you want without a
+                single commercial – all for one low monthly price.
+                There's always something new to discover and new TV shows and movies
+                are added every week!
+              </p>
+
+            </li>
+          </ul>
+        </section>
+          
+    <script src="js/index.js"></script>
+  </body>
+</html>
