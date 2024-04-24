@@ -1,15 +1,17 @@
-const membershipForm = document.querySelector(".membership-form");
-const membershipInput = document.querySelector(".membership-input");
+const membershipForm = document.querySelector(".membership__form");
+const membershipInput = document.querySelector(".membership__input");
 const membershipInputContainer = document.querySelector(
-  ".membership-input-container"
+  ".membership__input__container"
 );
-const membershipInputLabel = document.querySelector(".membership-placeholder");
+const membershipInputLabel = document.querySelector(".membership__placeholder");
 const membershipInputMessage = document.querySelector(
-  ".membership-input-message"
+  ".membership__input__message"
 );
 
-const ON_FOCUS = "on-focus"; // Use a consistent naming convention for constants
-const FOCUS_IN = "focusin"; // 'focus-in' isn't a standard event, changed to 'focusin'
+const accordionQuestionEls = document.querySelectorAll(".accordion__question");
+
+const ON_FOCUS = "on__focus";
+const FOCUS_IN = "focusin";
 
 const validateEmail = (email) =>
   /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email);
@@ -20,19 +22,21 @@ const handleFocus = (e) => {
     type,
   } = e;
 
-  if (value) return; // Do nothing if there's a value already, no explicit 'true' needed
+  if (value) return true;
 
   if (type === FOCUS_IN) {
     membershipInputContainer.classList.add(ON_FOCUS);
-  } else {
-    membershipInputContainer.classList.remove(ON_FOCUS);
+    return true;
   }
+
+  membershipInputContainer.classList.remove(ON_FOCUS);
 };
 
 const handleSubmit = (e) => {
   e.preventDefault();
 
   const { value } = membershipInput;
+
   const validEmail = validateEmail(value);
 
   if (validEmail) {
@@ -51,3 +55,12 @@ const handleSubmit = (e) => {
 membershipInput.addEventListener(FOCUS_IN, handleFocus);
 membershipInput.addEventListener("focusout", handleFocus);
 membershipForm.addEventListener("submit", handleSubmit);
+
+accordionQuestionEls.forEach((element) => {
+  const handler = (e) => {
+    const parent = e.target.parentElement;
+    parent.classList.toggle("active");
+  };
+
+  element.addEventListener("click", handler);
+});
