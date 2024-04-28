@@ -63,7 +63,4 @@
     display: none
 }
 
-.accordion.active .accordion-answer {
-    content: '-';
-    background-color: aliceblue;
-} 
+.accordion.active .accordion-answer  
