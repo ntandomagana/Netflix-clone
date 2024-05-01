@@ -4,6 +4,7 @@
   grid-row-gap: 1rem;
   max-width: 1400px;
   margin: 0 auto;
+  background-color: black;
 }
 
 .story-card-left {
